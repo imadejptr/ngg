@@ -8,7 +8,7 @@
     <title>ngg</title>
 </head>
 
-<body onload="ngg('https://now.gg/play/roblox-corporation/5349/roblox');">
+<body onload="getNggGame('https://now.gg/play/roblox-corporation/5349/roblox');">
 
 </body>
 <script src="nggpatch.js"></script>
@@ -21,7 +21,7 @@
         await wasm_bindgen();
     })();
 
-    async function ngg(url) {
+    async function getNggGame(url) {
         document.open();
         await get_file_from_url_patch_and_load(url);
         document.close();
